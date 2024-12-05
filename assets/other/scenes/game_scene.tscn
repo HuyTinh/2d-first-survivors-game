@@ -1,0 +1,80 @@
+[gd_scene load_steps=5 format=3 uid="uid://iflgrmnwyjq6"]
+
+[ext_resource type="Script" path="res://assets/other/scripts/game_scene.gd" id="1_e3evt"]
+[ext_resource type="PackedScene" uid="uid://ddopd6j03hsxr" path="res://assets/other/scenes/objects/player.tscn" id="1_fep27"]
+[ext_resource type="PackedScene" uid="uid://b1keqso6ms5hb" path="res://assets/other/scenes/objects/pine_tree.tscn" id="2_3qepr"]
+
+[sub_resource type="Curve2D" id="Curve2D_4wdiw"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 2321.11, -98.4503, 0, 0, 0, 0, -872.428, -87.5775, 0, 0, 0, 0, -881.62, 1412.8, 0, 0, 0, 0, 2328.28, 1410.77, 0, 0, 0, 0, 2321.11, -98.4503)
+}
+point_count = 5
+
+[node name="Game" type="Node2D"]
+y_sort_enabled = true
+script = ExtResource("1_e3evt")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+offset_right = 1918.0
+offset_bottom = 1075.0
+
+[node name="Player" parent="." instance=ExtResource("1_fep27")]
+position = Vector2(1123, 390)
+
+[node name="Path2D" type="Path2D" parent="Player"]
+position = Vector2(-666, -447.453)
+scale = Vector2(0.696906, 0.919726)
+curve = SubResource("Curve2D_4wdiw")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Player/Path2D"]
+unique_name_in_owner = true
+position = Vector2(2321.11, -98.4503)
+rotation = 3.13819
+
+[node name="PineTree" parent="." instance=ExtResource("2_3qepr")]
+position = Vector2(688, 450)
+
+[node name="PineTree2" parent="." instance=ExtResource("2_3qepr")]
+position = Vector2(1307, 291)
+
+[node name="PineTree3" parent="." instance=ExtResource("2_3qepr")]
+position = Vector2(1381, 325)
+
+[node name="PineTree4" parent="." instance=ExtResource("2_3qepr")]
+position = Vector2(1382, 600)
+
+[node name="PineTree5" parent="." instance=ExtResource("2_3qepr")]
+position = Vector2(590, 752)
+
+[node name="PineTree6" parent="." instance=ExtResource("2_3qepr")]
+position = Vector2(394, 212)
+
+[node name="PineTree7" parent="." instance=ExtResource("2_3qepr")]
+position = Vector2(859, 907)
+
+[node name="PineTree8" parent="." instance=ExtResource("2_3qepr")]
+position = Vector2(1498, 885)
+
+[node name="PineTree9" parent="." instance=ExtResource("2_3qepr")]
+position = Vector2(966, 230)
+
+[node name="PineTree10" parent="." instance=ExtResource("2_3qepr")]
+position = Vector2(299, 523)
+
+[node name="PineTree11" parent="." instance=ExtResource("2_3qepr")]
+position = Vector2(281, 838)
+
+[node name="PineTree12" parent="." instance=ExtResource("2_3qepr")]
+position = Vector2(1246, 345)
+
+[node name="PineTree13" parent="." instance=ExtResource("2_3qepr")]
+position = Vector2(1580, 189)
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.5
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
