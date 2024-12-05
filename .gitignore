@@ -1,15 +1,45 @@
-# Godot 4+ specific ignores
-.godot/
+# Godot specific
+.import/                 # Thư mục cache cho Godot
+*.import                 # Các tệp cache của Godot
+*.godot                  # Tệp metadata không cần thiết
+*.tscn.converted         # Tệp tạm thời khi chuyển đổi cảnh
+*.scn.converted          # Tệp tạm thời khi chuyển đổi cảnh
 
-# Godot-specific ignores
-.import/
-export.cfg
-export_presets.cfg
+# OS-specific files
+.DS_Store                # MacOS
+Thumbs.db                # Windows
+desktop.ini              # Windows
 
-# Imported translations (automatically generated from CSV files)
-*.translation
+# IDE/Editor specific
+.vscode/                 # Visual Studio Code
+.idea/                   # JetBrains IDEs
+*.sublime-workspace      # Sublime Text
+*.sublime-project        # Sublime Text
 
-# Mono-specific ignores
-.mono/
-data_*/
-mono_crash.*.json
+# Logs and crash reports
+*.log                    # File log
+*.log~                   # Log backups
+*.crash                  # Crash reports
+
+# Godot editor settings
+.editor_settings-*.json  # Godot editor cài đặt cho từng người dùng
+
+# Compiled files
+*.mono                   # Thư mục Mono của Godot
+*.dll                    # Assembly DLL (khi sử dụng C#)
+*.exe                    # File thực thi
+*.pdb                    # Debug symbols
+*.mdb                    # Mono debug symbols
+
+# Temporary files
+*.tmp                    # Tệp tạm
+*.temp                   # Tệp tạm
+*.bak                    # Tệp sao lưu
+
+# Build output (nếu sử dụng Godot export)
+export/                  # Thư mục xuất
+*.pck                    # Tệp Godot export package
+*.exe                    # File thực thi xuất
+*.apk                    # File Android xuất
+*.ipa                    # File iOS xuất
+*.zip                    # File export zip
