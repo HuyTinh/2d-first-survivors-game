@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1733418974
+::res://::1733450738
 default_bus_layout.tres::AudioBusLayout::6564268947468103023::1695668179::0::1::::<><>::
 icon.png::CompressedTexture2D::621515402784007901::1695668179::1733407952::1::::<><>::
 README.md::TextFile::-1::1733412005::0::1::::<><>::
@@ -42,16 +42,16 @@ impact.tscn::PackedScene::706737085132625066::1733413875::0::1::::<><>::res://as
 muzzle_flash.gd::GDScript::-1::1695668179::0::1::::<>Node2D<>::
 muzzle_flash.png::CompressedTexture2D::3592944556550980239::1695668179::1733413876::1::::<><>::
 muzzle_flash.tscn::PackedScene::6601472980654318439::1733413875::0::1::::<><>::res://assets/other/pistol/muzzle_flash/muzzle_flash.gd<>uid://brgpjilf7s2ul::::res://assets/other/pistol/muzzle_flash/muzzle_flash.png
-::res://assets/other/scenes/::1733418937
-game_scene.tscn::PackedScene::572512151614038051::1733418937::0::1::::<><>::res://assets/other/scripts/game_scene.gd<>uid://ddopd6j03hsxr::::res://assets/other/scenes/objects/player.tscn<>uid://b1keqso6ms5hb::::res://assets/other/scenes/objects/pine_tree.tscn
+::res://assets/other/scenes/::1733419148
+game_scene.tscn::PackedScene::572512151614038051::1733419148::0::1::::<><>::res://assets/other/scripts/game_scene.gd<>uid://ddopd6j03hsxr::::res://assets/other/scenes/objects/player.tscn<>uid://b1keqso6ms5hb::::res://assets/other/scenes/objects/pine_tree.tscn
 ::res://assets/other/scenes/objects/::1733417722
 bullet.tscn::PackedScene::5800979841960496486::1733416682::0::1::::<><>::res://assets/other/scripts/player/bullet.gd<>uid://dftkbqwsfd68r::::res://assets/other/pistol/projectile.png
 gun.tscn::PackedScene::2881484627806374891::1733416682::0::1::::<><>::res://assets/other/scripts/player/gun.gd<>uid://cswb5do8rrj7q::::res://assets/other/pistol/pistol.png
 mob.tscn::PackedScene::4977072759919837728::1733416932::0::1::::<><>::res://assets/other/scripts/enemy/mob.gd<>uid://ogik4s70pgwl::::res://assets/other/characters/slime/slime.tscn
 pine_tree.tscn::PackedScene::4232246804968925975::1733416682::0::1::::<><>::uid://b7rhtttevhxtj::::res://assets/other/characters/ground_shadow.png<>uid://caqfk2xng5v5u::::res://assets/other/trees/pine_tree.png
 player.tscn::PackedScene::7399647626124142783::1733417722::0::1::::<><>::uid://pbmyh1qru7p::::res://assets/other/characters/happy_boo/happy_boo.tscn<>res://assets/other/scripts/player/player.gd<>uid://bhb2vpietl78b::::res://assets/other/scenes/objects/gun.tscn
-::res://assets/other/scripts/::1733418301
-game_scene.gd::GDScript::-1::1733418301::0::1::::<>Node2D<>::
+::res://assets/other/scripts/::1733419160
+game_scene.gd::GDScript::-1::1733419160::0::1::::<>Node2D<>::
 ::res://assets/other/scripts/enemy/::1733416932
 mob.gd::GDScript::-1::1733416932::0::1::::<>CharacterBody2D<>::
 ::res://assets/other/scripts/player/::1733417722
